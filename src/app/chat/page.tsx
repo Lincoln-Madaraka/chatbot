@@ -58,7 +58,7 @@ export default function ChatPage() {
             localStorage.removeItem("loggedIn");
             router.push("/");
           }}
-          className="bg-green-500 hover:bg-green-600 text-white px-4 py-1 rounded"
+          className="bg-blue-800 hover:bg-blue-600 text-white px-4 py-1 rounded"
         >
           Logout
         </button>
@@ -88,18 +88,18 @@ export default function ChatPage() {
       </main>
 
       {/* Input */}
-      <footer className="p-4 border-t border-gray-200 flex gap-2">
+      <footer className="p-4 border-t border-gray-200 flex gap-2 text-gray-800">
         <input
           type="text"
           placeholder="Type your message..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-          className="flex-1 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
+          className="flex-1 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
         <button
           onClick={sendMessage}
-          className="bg-green-500 hover:bg-green-600 text-white px-4 rounded"
+          className="bg-blue-800 hover:bg-blue-600 text-white px-4 rounded"
         >
           Send
         </button>
