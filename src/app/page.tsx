@@ -37,7 +37,7 @@ export default function LoginPage() {const [email, setEmail] = useState("");
       {/* Login Form */}
       <form
         onSubmit={handleLogin}
-        className="bg-gray-600 p-6 rounded-lg shadow-lg w-full max-w-sm"
+        className="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-sm"
       >
         <input
           type="email"
