@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 
 
+
 export default function LoginPage() {const [email, setEmail] = useState("");
   const router = useRouter();
 
@@ -50,7 +51,7 @@ export default function LoginPage() {const [email, setEmail] = useState("");
           type="submit"
           className="w-full bg-red-900 hover:bg-blue-900 text-white font-semibold py-2 px-4 rounded"
         >
-          Login
+          Send 
         </button>
       </form>
 
