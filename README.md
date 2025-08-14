@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### Chatbot (Next.js + OpenAI)
 
-## Getting Started
+This is a simple chatbot web app built with Next.js that integrates with the OpenAI API.
+It was created as a test project to explore Next.js app structure, API integration, and UI features like notifications.
 
-First, run the development server:
+### Features
 
+- Next.js 15 (Turbopack) project structure
+- OpenAI API integration for chatbot responses
+- React Toastify for beautiful, non-intrusive notifications
+- Basic login placeholder (default: test@example.com)
+- TypeScript support
+
+### Project Structure
 ```bash
+~/chatbot
+├── eslint.config.mjs
+├── next.config.ts
+├── next-env.d.ts
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── public
+├── src
+├── tsconfig.json
+└── README.md
+
+
+src/ → App source code (pages, components, API routes)
+
+public/ → Static assets
+
+next.config.ts → Next.js config
+
+eslint.config.mjs → Linting rules
+```
+### Getting Started
+
+Clone the repository:
+```bash
+git clone https://github.com/your-username/chatbot.git
+cd chatbot
+
+Install dependencies:
+
+npm install
+
+Add your OpenAI API key in an .env.local file:
+
+OPENAI_API_KEY=your_api_key_here
+
+Run the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+The app will be available at http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Notes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project was built for testing purposes.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+OpenAI API usage depends on your account credits/quota — responses may fail if the quota is exhausted.
 
-## Learn More
+The login is a placeholder only (test@example.com) and does not include authentication logic.
 
-To learn more about Next.js, take a look at the following resources:
+### Built With
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js
+React Toastify
+OpenAI API
