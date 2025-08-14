@@ -12,7 +12,7 @@ export default function ChatPage() {
   const chatEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Redirect if not logged in
+   
     if (localStorage.getItem("loggedIn") !== "true") {
       router.push("/");
     }
@@ -76,7 +76,7 @@ export default function ChatPage() {
             <div
               className={`max-w-xs px-3 py-2 rounded-lg text-sm shadow ${
                 msg.role === "user"
-                  ? "bg-green-500 text-white rounded-br-none"
+                  ? "bg-blue-500 text-white rounded-br-none"
                   : "bg-gray-200 text-gray-800 rounded-bl-none"
               }`}
             >
@@ -95,7 +95,7 @@ export default function ChatPage() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-          className="flex-1 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="flex-1 border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
         <button
           onClick={sendMessage}
