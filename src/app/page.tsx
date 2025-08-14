@@ -54,9 +54,6 @@ export default function LoginPage() {const [email, setEmail] = useState("");
         </button>
       </form>
 
-      <p className="text-gray-400 mt-4 text-sm">
-        Use <span className="font-mono">test@example.com</span> to log in.
-      </p>
     </div>
   );
 }
